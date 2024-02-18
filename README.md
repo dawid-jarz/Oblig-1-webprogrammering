@@ -15,3 +15,5 @@ Kort beskrivelse av applikasjon:
 3. Trykk "Kjøp bilett" for å fullføre kjøpet av billetten. 
 4. Trykk på "Slett alle bilettene" for å fjerne registrerte kjøp av bilettene.
 
+Applikasjonen behandler arrays, legger dem synlig til, og sletter dem i form av kinobilletter.
+

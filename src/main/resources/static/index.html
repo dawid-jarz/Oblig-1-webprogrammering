@@ -1,0 +1,64 @@
+
+<!--Sorry for the mix of both english and Norwegian in the code but i was a little bit confused on which language
+we were supposed to write the oblig in-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling av kinobiletter</title>
+    <script src="script.js" defer></script>
+
+    <style>
+        u {
+            text-decoration: none;
+        }
+    </style>
+    <!--Did the style part so the list of tickets under "Kjøpte billetter" don't get the bottom line under them-->
+
+</head>
+
+<body>
+
+<h1>Bestilling av kinobiletter</h1>
+
+<form id="bestillingSkjema">
+
+    <label for="film" style="display:inline-block; width:70px;">Velg film:</label>
+    <select id="film" required>
+        <option value="Komedie">Komedie</option>
+        <option value="Skrekkfilm">Skrekkfilm</option>
+        <option value="Kul film">Kul film</option>
+    </select>
+    <br><br>
+
+    <label for="antall" style="display:inline-block; width:70px;">Antall </label>
+    <input type="number" id="antall" required>
+    <br><br>
+
+    <label for="fnavn" style="display:inline-block; width:70px;">Fornavn:</label>
+    <input type="text" id="fnavn" required>
+    <br><br>
+
+    <label for="enavn" style="display:inline-block; width:70px;">Etternavn:</label>
+    <input type="text" id="enavn" required>
+    <br><br>
+
+    <label for="tlfnr" style="display:inline-block; width:70px;">Telefonnr:</label>
+    <input type="tel" id="tlfnr" required>
+    <span id="tlfnrError" style="color:rgb(129, 16, 16);"></span>
+    <br><br>
+
+    <label for="epost" style="display:inline-block; width:70px;">E-post:</label>
+    <input type="email" id="epost" required>
+    <span id="epostError" style="color:rgb(129, 16, 16);"></span>
+    <br><br>
+
+    <button type="button" onclick="bestillingBilett()">Kjøp bilett</button>
+    <button type="button" onclick="slettBiletter()">Slett alle billettene</button>
+</form>
+
+<h2>Kjøpte billetter</h2>
+<u id="bilettListe"></u>
+</body>
+</html>
